@@ -8,25 +8,25 @@ st.set_page_config(layout="wide")
 # 主標題
 st.title("天文科展網站")
 
-# HTML 檔案路徑與對應的顯示名稱
+# HTML 檔案路徑與對應的顯示名稱 (移除 /content/ 前綴)
 html_files = {
-    "50PC_density": "/content/50PC_density.html",
-    "10PC_hist_filtered": "/content/10PC_hist_filtered.html",
-    "50PC_3D": "/content/50PC_3D.html",
-    "20PC_3D": "/content/20PC_3D.html",
-    "50PC_hist_filtered": "/content/50PC_hist_filtered.html",
-    "10PC_stars": "/content/10PC_stars.html",
-    "10PC_HR": "/content/10PC_HR.html",
-    "20PC_hist_filtered": "/content/20PC_hist_filtered.html",
-    "20PC_HR": "/content/20PC_HR.html",
-    "50PC_luminosity": "/content/50PC_luminosity.html",
-    "10PC_luminosity": "/content/10PC_luminosity.html",
-    "20PC_density": "/content/20PC_density.html",
-    "10PC_3D": "/content/10PC_3D.html",
-    "10PC_density": "/content/10PC_density.html",
-    "50PC_stars": "/content/50PC_stars.html",
-    "20PC_luminosity": "/content/20PC_luminosity.html",
-    "50PC_HR": "/content/50PC_HR.html",
+    "50PC_density": "50PC_density.html",
+    "10PC_hist_filtered": "10PC_hist_filtered.html",
+    "50PC_3D": "50PC_3D.html",
+    "20PC_3D": "20PC_3D.html",
+    "50PC_hist_filtered": "50PC_hist_filtered.html",
+    "10PC_stars": "10PC_stars.html",
+    "10PC_HR": "10PC_HR.html",
+    "20PC_hist_filtered": "20PC_hist_filtered.html",
+    "20PC_HR": "20PC_HR.html",
+    "50PC_luminosity": "50PC_luminosity.html",
+    "10PC_luminosity": "10PC_luminosity.html",
+    "20PC_density": "20PC_density.html",
+    "10PC_3D": "10PC_3D.html",
+    "10PC_density": "10PC_density.html",
+    "50PC_stars": "50PC_stars.html",
+    "20PC_luminosity": "20PC_luminosity.html",
+    "50PC_HR": "50PC_HR.html",
 }
 
 # 導覽頁
@@ -41,10 +41,12 @@ if selected_page:
     st.header(selected_page)
     file_path = html_files[selected_page]
     
+    # 在 Streamlit Cloud 環境中，檔案通常在應用程式的根目錄或相對路徑下
+    # 這裡假設 HTML 檔案與 app.py 位於同一目錄
     if os.path.exists(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             html_content = f.read()
         components.html(html_content, height=700, scrolling=True) # 使用 height 和 scrolling 參數確保內容正常顯示
     else:
-        st.error(f"錯誤：找不到檔案 {file_path}")
+        st.error(f"錯誤：找不到檔案 {file_path}。請確認它已上傳到 GitHub 儲存庫的正確位置。")
 
