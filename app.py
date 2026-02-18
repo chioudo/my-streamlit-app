@@ -6,7 +6,7 @@ import os
 st.set_page_config(layout="wide")
 
 # 主標題
-st.title("天文科展網站")
+st.title("科展網站")
 
 # HTML 檔案路徑與對應的顯示名稱 (移除 /content/ 前綴)
 html_files = {
