@@ -26,11 +26,6 @@ html_files = {
     "50PC光度密度3D體積圖": "50PC_luminosity.html",
     "50PC次數分布圖": "50PC_hist_filtered.html",
     "50PC赫羅圖": "50PC_HR.html",
-    "100PC次數分布圖": "100PC_hist_filtered.html",
-    "100PC恆星密度3D體積圖": "100PC_stars.html",
-    "100PC光度密度3D體積圖": "100PC_luminosity.html",
-    "100PC次數分布圖": "100PC_hist_filtered.html",
-    "100PC赫羅圖": "100PC_HR.html",
 }
 
 
