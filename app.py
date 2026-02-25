@@ -10,16 +10,6 @@ st.title("科展網站")
 
 # HTML 檔案路徑與對應的顯示名稱 (移除 /content/ 前綴)
 html_files = {
-    "10PC次數分布圖": "10PC_hist_filtered.html",
-    "3D圖(10PC)": "10PC_3D.html",
-    "10PC恆星密度3D體積圖": "10PC_stars.html",
-    "10PC光度密度3D體積圖": "10PC_luminosity.html",
-    "10PC赫羅圖": "10PC_HR.html",
-    "20PC次數分布圖": "20PC_hist_filtered.html",
-    "3D圖(20PC)": "20PC_3D.html",
-    "20PC恆星密度3D體積圖": "20PC_stars.html",
-    "20PC光度密度3D體積圖": "20PC_luminosity.html",
-    "20PC赫羅圖": "20PC_HR.html",
     "50PC次數分布圖": "50PC_hist_filtered.html",
     "3D圖(50PC)": "50PC_3D.html",
     "50PC恆星密度3D體積圖": "50PC_stars.html",
