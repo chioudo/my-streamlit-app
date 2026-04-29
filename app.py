@@ -15,7 +15,7 @@ html_files = {
     "恆星密度3D體積圖": "50PC_stars.html",
     "光度密度3D體積圖": "50PC_luminosity.html",
     "次數分布圖": "50PC_hist_filtered.html",
-    "赫羅圖": "50PC_HR.html",
+    "星色星等圖": "50PC_HR.html",
 }
 
 
