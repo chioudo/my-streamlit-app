@@ -16,7 +16,6 @@ html_files = {
     "光度密度3D體積圖": "50PC_luminosity.html",
     "次數分布圖": "50PC_hist_filtered.html",
     "星色星等圖": "50PC_HR_Diagram.html",
-    "恆星演化階段恆星分布圖": "50PC_HR_Scatter.html",
     "恆星密度次數分布圖": "50PC_hist_filtered.html",
     "恆星密度3D體積圖與銀河旋臂疊圖": "疏散星團分布.html",
 }
