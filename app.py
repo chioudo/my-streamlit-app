@@ -17,6 +17,7 @@ html_files = {
     "次數分布圖": "50PC_hist_filtered.html",
     "星色星等圖": "50PC_HR_Diagram.html",
     "恆星演化階段恆星分布圖": "50PC_HR_Scatter.html",
+    "恆星密度次數分布圖": "50PC_hist_filtered.html",
 }
 
 
