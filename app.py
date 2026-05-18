@@ -13,10 +13,8 @@ html_files = {
     "次數分布圖": "50PC_hist_filtered.html",
     "3D分布圖": "50PC_3D.html",
     "恆星密度3D體積圖": "50PC_stars.html",
-    "次數分布圖3D體積圖": "50PC_HR_Scatter.html",
-    "次數分布圖": "50PC_hist_filtered.html",
+    "星色星等圖3D體積圖": "50PC_HR_Scatter.html",
     "星色星等圖": "50PC_HR_Diagram.html",
-    "恆星密度次數分布圖": "50PC_hist_filtered.html",
     "恆星密度3D體積圖與銀河旋臂疊圖": "疏散星團分布.html",
 }
 
